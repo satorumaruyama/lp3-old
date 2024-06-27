@@ -1,0 +1,1126 @@
+@charset 'utf-8';
+
+@import "_reset";
+@import "_variables";
+
+body {
+    .header {
+        padding-bottom: 1.5vw;
+        @include large($pc) {
+            padding-bottom: 0;
+        }
+        &__container {
+            display: flex;
+            align-items: center;
+            @include large($pc) {
+                width: 72.6vw;
+                margin: 0 auto;
+                padding-top: 0.6vw;
+                padding-bottom: 1.4vw;
+                justify-content: space-between;
+            }
+        }
+        &__logo {
+            padding-top: 1.2vw;
+            padding-left: 1.5vw;
+            @include large($pc) {
+                padding-top: 0.3vw;
+                padding-left: 0.3vw;
+            }
+        }
+        &__logo h2 {
+            display: flex;
+            @include large($pc) {
+                padding-top: 0.4vw;
+            }
+        }
+        &__logoMainImg {
+            color: #fa7da3;
+            @include large($pc) {
+                width: 6.5vw;
+            }
+        }
+        &__logoSubImg {
+            color: #fa7da3;
+            @include large($pc) {
+                width: 6.5vw;
+            }
+        }
+        &__nav {
+            display: flex;
+            align-items: center;
+            padding-top: 1.5vw;
+            padding-left: 1.2vw;
+            @include large($pc) {
+                width: 37.1vw;
+                padding-top: 0.9vw;
+                padding-left: 0.4vw;
+            }
+        }
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 7.9vw;
+            border-radius: 7.4vw;
+            font-family: "Noto Serif JP";
+            font-size: 0.75rem;
+            color: #fff;
+            white-space: nowrap;
+            cursor: pointer;
+            @include large($pc) {
+                font-size: 1.3125rem;
+                height: 3.4vw;
+            }
+            @include middle($min, $max) {
+                font-size: 0.7rem;
+            }
+        }
+        & .-pink {
+            background-color: #fa7da3;
+            width: 27.4vw;
+            @include large($pc) {
+                width: 13.1vw;
+                padding-left: 0.3vw;
+                margin-left: 0.7vw;
+            }
+        } 
+        & .-pink a {
+            width: 75%;
+        } 
+        & .-green {
+            background-color: #49c43d;
+            width: 44.5vw;
+            margin-left: 2.5vw;
+            @include large($pc) {
+                width: 20.5vw;
+                padding-left: 0.3vw;
+                margin-left: 1.3vw;
+            }
+        }  
+        & .-green a {
+            width: 86%;
+
+        }
+        .fa-chevron-right {
+            padding-left: 1.5vw;
+            @include large($pc) {
+                padding-left: 0.2vw;
+            }
+        }
+    }
+
+    .mainVisual {
+        display: flex;
+        flex-direction: column;
+        background-image: url("../images/mainvisual-image.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 5.4vw;
+        @include large($pc) {
+            background-image: url("../images/mainvisual-image-pc.png");
+            padding-bottom: 2.3vw;
+        }
+        &__container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top:0.5vw;
+            padding-bottom: 2vw;
+            margin-left: 4.6vw;
+            @include large($pc) {
+                width: 70.9vw;
+                margin: 0 auto;
+                justify-content: unset;
+                padding: 0;
+            }
+            @include middle($min, $max) {
+                width: 80vw;
+            }
+        }
+        &__titleContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @include large($pc) {
+                padding-top: 0;
+                width: 39.7vw;
+            }
+            @include middle($min, $max) {
+                width: 50vw;
+            }
+        }
+        &__title {
+            font-size: 2.625rem;
+            font-family: "Noto Sans JP";
+            color: #ffffff;
+            line-height: 1.2;
+            @include large($pc) {
+                font-size: 7.6344rem;
+            }
+            @include middle($min, $max) {
+                font-size: 3.5rem;
+            }
+        }
+        &__subTitle {
+            font-size: 1.125rem;
+            font-family: "Noto Sans JP";
+            color: #ffffff;
+            line-height: 1.2;
+            @include large($pc) {
+                font-size: 2.25rem;
+                padding-left: 21.5vw;
+            }
+            @include middle($min, $max) {
+                padding-left: 0;
+            }   
+        }
+
+        &__price {
+            display: flex;
+            box-shadow: 0 3.536px 0px 0px rgba(0, 0, 0, 0.25);
+            background-color: rgba(255,255,255,0.3);
+            opacity: 0.302;
+            padding-bottom: 4.6vw;
+            padding-left: 4.6vw;
+            width: 48.2vw;
+            @include large($pc) {
+                width: 29.4vw;
+                padding-left: 1.3vw;
+                padding-bottom: 3.4vw;
+            }
+            @include middle($min, $max) {
+                width: 57.4vw;
+            }
+        }
+        &__salesText {
+            padding-left: 2vw;
+            padding-top: 3vw;
+            @include large($pc) {
+                padding-left: 2.5vw;
+                padding-top: 0;
+            }
+        }
+        &__onlyNow  {
+                font-size: 0.8125rem;
+                font-family: "Noto Sans JP";
+                color: rgb(250, 125, 163);
+                font-weight: bold;
+                text-align: center;
+                background-color: #ffffff;
+                line-height: 1.5rem;
+                margin-top: 2.8vw;
+                @include large($pc) {
+                    font-size: 1.8281rem;
+                    padding: 0.8vw;
+                }
+        }
+        &__firstMonth {
+            font-size: 1.5rem;
+            font-family: "Noto Sans JP";
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            text-align: center;
+            background-color: rgb(250, 125, 163);
+            opacity: 1;  
+            padding-top: 2.3vw; 
+            @include large($pc) {
+                font-size: 3.375rem;
+                padding-top: 1.3vw;
+            }  
+        }
+        &__salesPrice {
+            display: flex;
+            align-items: center;
+            padding-left: 3vw;
+            padding-top: 3.3vw;
+            @include large($pc) {
+                padding-left: 1.4vw;
+                padding-top: 0;
+            }
+        }
+        &__salesNumber {
+            font-size: 4.75rem;
+            font-family: "Noto Sans JP";
+            font-weight: bold;
+            color: #fffd7a;
+            font-weight: bold;
+            text-align: center;
+            @include large($pc) {
+                font-size: 10.6875rem;
+            }
+        }
+        &__salesUnit {
+            font-size: 2.25rem;
+            font-family: "Noto Sans JP";
+            color: #fffd7a;
+            font-weight: bold;
+            text-align: center;
+            padding-top: 5.8vw;
+            @include large($pc) {
+                font-size: 5.0625rem;
+                padding-top: 3.8vw;
+            }
+        }
+        &__monthlyPrice {
+            display: flex;
+            justify-content: flex-end;
+            font-family: "Outfit";
+            color: rgb(255, 255, 255);
+            text-align: right;
+            padding-right: 6.4vw;
+            @include large($pc) {
+                width: 70.9vw;
+                padding-top: 0.6vw;
+                padding-right: 6.1vw;
+                margin: 0 auto;
+            }
+        }
+        &__monthlyPriceNumber {
+            font-size: 0.875rem;
+            @include large($pc) {
+                font-size: 1.655rem;
+            }
+        }
+        &__monthlyPriceUnit {
+            font-size: 0.5625rem;
+            font-family: "Noto Sans JP";
+            padding-top: 1vw;
+            @include large($pc) {
+                font-size: 1.0637rem;
+            }
+        }
+        &__list {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 6.4vw;
+            padding-left: 52.3vw;
+            @include large($pc) {
+                padding-top: 3.5vw;
+                padding-left: 14.3vw;
+            }
+        }
+        &__item {
+            display: flex;
+            justify-content: center;
+            font-family: "Noto Sans JP";
+            color: rgb(255, 255, 255);
+            text-align: center;
+            border: 1px solid #ffffff;
+            margin-bottom: 3.5vw;
+            width: 34.1vw;
+            font-size: 1.125rem;
+            line-height: 1.2;
+            padding: 1.2vw 0;
+            @include large($pc) {
+                width: 29.2vw;
+                font-size: 1.75rem;
+                margin-left: 23.7vw;
+                padding: 1.2vw 0;
+                margin-bottom: 1.3vw;
+            }
+        }
+    }
+
+    .sales {
+        background-color: #fffedd;
+        padding-bottom: 4.3vw;
+        @include large($pc) {
+            padding-bottom: 1.3vw;
+        }
+        &__title {
+            font-size: 1.3125rem;
+            font-family: "Noto Sans JP";
+            color: rgb(250, 125, 163);
+            line-height: 1.2;
+            text-align: center;
+            padding-top: 5.8vw;
+            @include large($pc) {
+                font-size: 2.125rem;
+                padding-top: 2.9vw;
+            }
+        }
+        &__container {
+            margin: 0 auto;
+            padding-top: 3.8vw;
+            width: 89.7vw;
+            border-radius: 2.5vw;
+            @include large($pc) {
+                width: 38.1vw;
+                padding-top: 1.7vw;
+            }
+        }
+        &__containerTitle {
+            font-size: 1.3125rem;
+            font-family: "Noto Sans JP";
+            color: rgb(255, 255, 255);
+            line-height: 1.2;
+            text-align: center;
+            background-color: #fa7da3;
+            margin: 0 auto;
+            padding-bottom: 1.5vw;
+            border-radius: 0.625rem 0.625rem 0 0;
+            @include large($pc) {
+                font-size: 2rem;
+                padding-bottom: 0.5vw;
+            }
+            @include middle($min, $max) {
+                font-size: 1rem;
+            }
+        }
+        &__containerText  {
+                font-size: 1.6875rem;
+                font-family: "Noto Sans JP";
+                color: rgb(250, 125, 163);
+                font-weight: bold;
+                line-height: 1.2;
+                text-align: center;
+                margin: 0 auto;
+                padding-top: 0.7vw;
+                padding-left: 2.3vw;
+                padding-bottom: 2vw;
+                background-color: #ffffff;
+                border-radius: 0 0 0.625rem 0.625rem;
+                white-space: nowrap;
+                @include large($pc) {
+                    font-size: 2.7294rem;
+                    padding-top: 0.4vw;
+                    padding-left: 1.1vw;
+                    padding-bottom: 0.8vw;
+                }
+                @include middle($min, $max) {
+                    font-size: 1rem;
+                }
+        }  
+        &__containerLarge {
+            font-size: 2.625rem;
+            @include large($pc) {
+                font-size: 4.2456rem;
+            }
+            @include middle($min, $max) {
+                font-size: 1.5rem;
+            }
+        }
+        &__contents {
+            font-size: 0.625rem;
+            font-family: "Noto Sans JP";
+            color: rgb(51, 51, 51);
+            line-height: 1.2;
+            text-align: center;
+            padding-top: 2vw;
+            @include large($pc) {
+                font-size: 0.875rem;
+                padding-top: 1.6vw;
+            }
+        }
+    }
+
+    .application    {
+        margin: 0 auto;
+        text-align: center;
+        @include large($pc) {
+        }
+        &__title {
+            font-size: 1.3125rem;
+            font-family: "Noto Sans JP";
+            color: rgb(250, 125, 163);
+            font-weight: bold;
+            line-height: 1.339;
+            padding-top: 4.1vw;
+            padding-bottom: 2.3vw;
+            padding-left: 1.5vw;
+            letter-spacing: 0.5vw;
+            @include large($pc) {
+                font-size: 2.125rem;
+                letter-spacing: 0.2vw;
+                padding-top: 4.5vw;
+                padding-left: 0.9vw;
+                padding-bottom: 1.1vw;
+            }
+        }
+        &__item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20.5vw;
+            font-family: "Noto Serif JP";
+            font-weight: bold;
+            font-size: 1.3125rem;
+            color: #fff;
+            cursor: pointer;
+            @include large($pc) {
+                font-size: 2.125rem;
+                height: 9vw;
+                border-radius: 4.0625rem;
+            }
+            @include middle($min, $max) {
+                font-size: 1rem;
+            }
+        }
+        &__item a {
+            width: 69.4vw;
+            padding-left: 3.8vw;
+            font-family: "Noto Sans JP";
+            @include large($pc) {
+                width:31.1vw;
+                font-family: "Noto Sans JP";
+                color: rgb(255, 255, 255);
+                font-weight: bold;
+                line-height: 1.339;
+            }
+
+        } 
+        & .-green {
+            background-color: #49c43d;
+            width: 89.7vw;
+            margin: 0 auto;
+            letter-spacing: 0.5vw;
+            line-height: 7.4vw;
+            border-radius: 7.0625rem;
+            @include large($pc) {
+                width:39.5vw;
+            }
+        } 
+        &__bend {
+            display: inline-block;
+        }  
+    }
+
+    .trial {
+        width: 89.7vw;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 9.4vw;
+        @include large($pc) {
+            width: 39.5vw;
+            padding-bottom: 4vw;
+        }
+        &__title {
+            font-size: 1.0625rem;
+            font-family: "Noto Sans JP";
+            color: rgb(80, 191, 255);
+            font-weight: bold;
+            line-height: 1.647;
+            border-top: 1px solid rgb(80, 191, 255);
+            border-bottom: 1px solid rgb(80, 191, 255);
+            margin-top: 7.9vw;
+            letter-spacing: 0.2vw; 
+            padding-top: 1vw; 
+            padding-bottom: 1.7vw; 
+            @include large($pc) {
+                font-size: 1.75rem;
+                margin-top: 3.4vw;
+                padding-bottom: 0.8vw;
+                padding-top: 0.2vw;
+            }
+        }
+        &__container {
+            text-align: start;
+            @include large($pc) {
+                padding-top: 0.4vw;
+            }
+        }
+        &__container p {
+            font-size: 0.875rem;
+            padding-top: 3vw;
+            @include large($pc) {
+                font-size: 1.4287rem;
+                padding-top: 1.3vw;
+                
+            }
+        }
+        &__container span {
+            font-size: 0.6875rem;
+            @include large($pc) {
+                font-size: 1.1225rem;
+            }
+        }
+    }
+
+    .point {
+        background-color: #fdf0f5;
+        text-align: center;
+        @include large($pc) {
+            padding-bottom: 0.2vw;
+        }
+        &__title {
+            font-size: 1.125rem;
+            font-family: "Noto Sans JP";
+            color: rgb(77, 43, 27);
+            padding-top: 8.4vw;
+            @include large($pc) {
+                padding-top: 2.4vw;
+            }
+        }
+        &__title img {
+            width: 51.2vw;
+            padding: 0.2vw 0;
+            @include large($pc) {
+                width: 18.4vw;
+                padding-top: 0.9vw;
+            }
+        }
+        &__subtitle {
+            font-size: 2rem;
+            font-family: "Noto Sans JP";
+            color: rgb(250, 125, 163);
+            font-weight: bold;
+            @include large($pc) {
+                font-size: 2.625rem;
+                padding-top: 0.8vw;
+            }
+        }
+        &__list {
+            padding-top: 3.8vw;
+            width: 89.7vw;
+            margin: 0 auto;
+            @include large($pc) {
+                padding-top: 4.2vw;
+                width: 54.1vw;
+            }
+        }
+        &__item {
+            margin-bottom: 7.6vw;
+            @include large($pc) {
+                margin-bottom: 3vw;
+            }
+        }
+        &__itemTitle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fa7da3;
+            margin: 0 auto;
+            padding: 3.3vw 0;
+            border-radius: 0.625rem 0.625rem 0 0;
+            @include large($pc) {
+                padding: 0.8vw 0;
+            }
+
+        }
+        &__itemTitleText {
+            font-size: 1.125rem;
+            font-family: "Noto Sans JP";
+            color: rgb(255, 255, 255);
+            line-height: 1.2;
+            border: 1px solid #fa7da3;
+            @include large($pc) {
+                font-size: 1.75rem;
+                padding: 0.4vw 0;
+            }
+        }
+        &__itemPipe {
+            padding:0 3vw;
+            @include large($pc) {
+                padding: 0 1vw;
+            }
+        }
+        &__itemContents {
+            margin: 0 auto;
+            padding-top: 3.3vw;
+            background-color: #ffffff;
+            border: 1px solid #fa7da3;
+            border-radius: 0 0 0.625rem 0.625rem;
+            padding-bottom: 6.3vw;
+            @include large($pc) {
+                padding-bottom: 2.8vw;
+                padding-top: 1vw;
+                padding-left: 0.2vw;
+            }
+        }
+        &__item:nth-child(2) .point__itemContents{
+            padding-bottom: 0;
+            @include large($pc) {
+                padding-bottom: 0.8vw;
+            }
+        }
+        &__itemContentsInner {
+            width: 79.4vw;
+            margin: 0 auto;
+            @include large($pc) {
+                width: 48.6vw;
+            }
+        }
+        &__contentsText {
+            font-size: 0.875rem;
+            font-family: "Noto Sans JP";
+            color: rgb(51, 51, 51);
+            line-height: 1.5;
+            text-align: left;
+            @include large($pc) {
+                font-size: 1.3125rem;
+                padding-top: 0.7vw;
+            }
+        }
+        &__contentsTitle {
+            font-size: 1.4375rem;
+            font-family: "Noto Sans JP";
+            color: rgb(77, 44, 28);
+            font-weight: bold;
+            font-variant: small-caps;
+            padding-top: 4.8vw;
+            @include large($pc) {
+                padding-top: 2vw;
+            }
+        }
+        &__contentsFlex {
+            display: flex;
+            justify-content: center;
+            padding-top: 3vw;
+            column-gap: 5.3vw;
+            @include large($pc) {
+                column-gap: 2.9vw;
+                padding-top: 1.7vw;
+            }
+        }
+        &__contentsBox {
+            width: 36.6vw;
+            height: 21.7vw;
+            border: 1px solid #000;
+            @include large($pc) {
+                width: 16vw;
+                height: 9.5vw;
+            }
+        }
+        &__contentsBox p {
+            padding-top: 8.7vw;
+            font-size: 1.125rem;
+            @include large($pc) {
+                padding-top: 3.6vw;
+                font-size: 1.75rem;
+            }
+
+        }
+        &__contentsBox img {
+            padding-top: 5.8vw;
+            @include large($pc) {
+                padding-top: 2.1vw;
+                width: 7.9vw;
+            }
+        }
+        &__comparisonText {
+            font-size: 0.875rem;
+            font-family: "Noto Sans JP";
+            color: rgb(51, 51, 51);
+            padding-top: 1.7vw;
+            @include large($pc) {
+                font-size: 1.3125rem;
+                padding-top: 0.9vw;
+            }
+        }
+        &__body {
+            background-image: url("../images/point-wholepart.png");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            margin-top: 5.8vw;
+            font-size: 0.75rem;
+            line-height: 4.2vw;
+            position: relative;
+            padding-bottom: 19.2vw;
+            @include large($pc) {
+                background-image: url("../images/point-wholepart-pc.png");
+                background-repeat: no-repeat;
+                font-size: 1rem;
+                padding-bottom: 0;
+                width: 75%;
+                margin: 1.5vw auto 2.3vw;
+                aspect-ratio: 533 / 601;
+            }
+        }
+        &__face {
+            line-height: 4.3vw;
+            @include large($pc) {
+                position: absolute;
+                top: 1.3vw;
+                left: 12.1vw;
+                line-height: 1.5vw;
+            }
+        }
+        &__upper {
+            padding-top: 5.8vw;
+            line-height: 4.3vw;
+            @include large($pc) {
+                position: absolute;
+                top: 9.5vw;
+                left: 13.8vw;
+                line-height: 1.5vw;
+                padding-top: 1.5vw;
+            }
+        }
+        &__upper p:last-child {
+            @include large($pc) {
+                display: none;
+            }
+        }
+        &__arm {
+            display: none;
+            @include large($pc) {
+                position: absolute;
+                top: 19vw;
+                left: 15.7vw;
+            }
+        }
+        &__under {
+            padding-top: 14.6vw;
+            @include large($pc) {
+                position: absolute;
+                top: 20.4vw;
+                left: 13.2vw;
+                line-height: 1.5vw;
+                padding-top: 4.2vw;
+            }
+        }
+        &__leg {
+            padding-top: 5.3vw;
+            @include large($pc) {
+                position: absolute;
+                top: 26.5vw;
+                left: 14vw;
+                padding-top: 0;
+            }
+        }
+        &__leg p:last-child {
+            @include large($pc) {
+                display: none;
+            }
+        }
+        &__legPc {
+            display: none;
+            @include large($pc) {
+                display: block;
+                position: absolute;
+                top: 37.5vw;
+                left: 12vw;
+            }            
+        }
+        &__head {
+            position: absolute;
+            top: 10.2vw;
+            right: 1.5vw;
+            @include large($pc) {
+                position: absolute;
+                top: 3.8vw;
+                left: 28.4vw;
+            }
+        }
+        &__back {
+            position: absolute;
+            top: 22.3vw;
+            right: 0.7vw;
+            @include large($pc) {
+                position: absolute;
+                top: 9vw;
+                left: 32.9vw;
+            }
+        }
+        &__hip {
+            position: absolute;
+            top: 53.5vw;
+            right: -0.7vw;
+            @include large($pc) {
+                position: absolute;
+                top: 16.7vw;
+                right: -2vw;
+                line-height: 1.5vw;
+            }
+        }
+        &__partial {
+            width: 83vw;
+            padding-top: 6.1vw;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 5.3vw;
+            row-gap: 1.5vw;
+            margin: 0 auto;
+            @include large($pc) {
+                display: flex;
+                width: 94%;
+                column-gap: 1.3vw;
+                padding-top: 2.1vw;
+            }
+        }
+        &__partialItem {
+            width: 25.6vw;
+        }
+        &__partialText {
+            padding-top: 3.5vw;
+            color: #fa7da3;
+            @include large($pc) {
+                padding-top: 0.7vw;
+            }
+        }
+    }
+
+    .course {
+        text-align: center;
+        @include large($pc) {
+            margin-top: 2.7vw;
+            padding-bottom: 5.4vw;
+        }
+        &__title {
+            font-size: 1.125rem;
+            font-family: "Noto Sans JP";
+            color: rgb(77, 43, 27);
+            padding-top: 10.6vw;
+            @include large($pc) {
+                font-size: 1.5rem;
+                padding-top: 1.1vw;
+            }
+        }
+        &__title img {
+            width: 51.2vw;
+            padding: 0.2vw 0;
+            @include large($pc) {
+                width: 18.4vw;
+                padding-top: 0.9vw;
+            }
+        }
+        &__subtitle {
+            font-size: 2rem;
+            font-family: "Noto Sans JP";
+            color: rgb(250, 125, 163);
+            font-weight: bold;
+            @include large($pc) {
+                font-size: 2.625rem;
+                padding-top: 0.6vw;
+            }
+        }
+        &__list {
+            padding-top: 3.8vw;
+            width: 89.7vw;
+            margin: 0 auto;
+            @include large($pc) {
+                display: flex;
+                justify-content: center;
+                column-gap: 2vw;
+                padding-top: 2.5vw;
+            }
+        }
+        &__item {
+            border-radius: 0.625rem;
+            padding-bottom: 5.6vw;
+            border: 1px solid #fa7da3;
+            margin-bottom: 6.6vw;
+            @include large($pc) {
+                width: 24.3vw;
+                padding-bottom: 0;
+                margin-bottom: 0;
+            }
+            @include middle($min, $max) {
+                width: 37vw;
+            }
+        }
+        &__itemContents {
+            margin: 0 auto;
+            padding-top: 3.3vw;
+            background-color: #ffffff;
+            @include large($pc) {
+                padding-bottom: 0;
+                padding-top: 0;
+            }
+        }
+        &__itemTitle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fdf0f5;
+            margin: 0 auto;
+            padding: 3.5vw 0;
+            @include large($pc) {
+                padding: 0.5vw 0;
+            }
+
+        }
+        &__itemTitleText {
+            font-size: 1.125rem;
+            font-family: "Noto Sans JP";
+            color: #fa7da3;
+            line-height: 1.2;
+            @include large($pc) {
+                font-size: 1.75rem;
+                padding: 0.4vw 0;
+                letter-spacing: 0.1vw;
+            }
+        }
+        &__itemContentsInner {
+            width: 79.4vw;
+            margin: 0 auto;
+            @include large($pc) {
+                width: 22vw;
+            }
+        }
+        &__itemContentsInner img {
+            padding-top: 2vw;
+            @include large($pc) {
+                padding-top: 1vw;
+            }
+        }
+        &__contentsText {
+            font-size: 0.875rem;
+            font-family: "Noto Sans JP";
+            color: rgb(51, 51, 51);
+            line-height: 1.5;
+            text-align: left;
+            @include large($pc) {
+                font-size: 1.125rem;
+                padding-top: 0.7vw;
+                width: 22.4vw;
+            }
+        }
+    }
+
+    .voice {
+        text-align: center;
+        padding-bottom: 13.1vw;
+        background-color: #fdf0f5;
+        @include large($pc) {
+            padding-bottom: 0;
+        }
+        &__subtitle {
+            font-size: 2rem;
+            font-family: "Noto Sans JP";
+            color: rgb(250, 125, 163);
+            font-weight: bold;
+            padding-top: 3vw;
+            @include large($pc) {
+                font-size: 2.625rem;
+                padding-top: 2.8vw;
+            }
+        }
+        .slider {
+            margin: 0 auto;
+            padding: 5.5vw 0;
+            @include large($pc) {
+                column-gap: 1vw;
+                padding-top:1vw;
+                width: 66vw;
+            }
+        }
+        .slider-item {
+            margin: 0 2.5vw;
+            @include large($pc) {
+                padding-top: 1.5vw;
+                margin: 0;
+            }
+        }
+        .slick-slide {
+            width: 79.4vw;
+            @include large($pc) {
+                width: 21.5vw;
+                margin-right: 1vw;
+            }
+        }
+        &__itemContents {
+            // height: auto;
+            // width: 100%;
+            background-color: #ffffff;
+            border-radius: 0 0 0.625rem 0.625rem;
+            @include large($pc) {
+                width: 21.5vw;
+                margin: 0 auto;
+                padding-bottom: 0.2vw;
+            }
+        }
+        &__itemTitle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fa7da3;
+            margin: 0 auto;
+            padding: 3.5vw 0;
+            border-radius: 0.625rem 0.625rem 0 0;
+            @include large($pc) {
+                padding: 0.3vw 0;
+                width: 21.5vw;
+            }
+
+        }
+        &__itemTitleText {
+            font-size: 1.125rem;
+            font-family: "Noto Sans JP";
+            color: #ffffff;
+            border: 1px solid #fa7da3;
+            line-height: 1.2;
+            @include large($pc) {
+                font-size: 1.125rem;
+                padding: 0.4vw 0;
+                letter-spacing: 0.1vw;
+                width: 21.5vw;
+            }
+        }
+        &__itemContentsInner {
+            display: flex;
+        }
+        &__itemImg {
+            width: 20vw;
+            margin: 0 5.1vw;
+            padding-top: 5.1vw;
+            @include large($pc) {
+                width: 20vw;
+                margin: 0;
+                padding-top: 1.2vw;
+                padding-left: 0.9vw;
+            }
+        }
+        &__itemBox {
+            width: 43.5vw;
+            text-align: left;
+            padding-top: 4.6vw;
+            @include large($pc) {
+                padding-top: 1.7vw;
+                padding-left: 0.9vw;
+            }
+        }
+        &__boxProfile {
+            font-size: 1rem;
+            font-family: "Noto Sans JP";
+            color: rgb(250, 125, 163);
+        }
+        &__boxText {
+            font-size: 0.875rem;
+            font-family: "Noto Sans JP";
+            color: rgb(51, 51, 51);
+            padding-top: 3vw;
+            width: 43.5vw;
+            @include large($pc) {
+                padding-top: 0.8vw;
+                width: 12.2vw;
+                line-height: 1.5;
+            }
+        }
+        .slick-dots {
+            bottom: -5.5vw;
+        }
+    }
+
+    .footer {
+        text-align: center;
+        background-color: #fa7da3;
+        color: #ffffff;
+        margin-top: 12.3vw;
+        @include large($pc) {
+            margin-top: 4.5vw;
+        }
+        &__logo {
+            padding: 3vw 0;
+            @include large($pc) {
+                margin: 0 auto;
+                padding: 1.8vw 0;
+
+            }
+        }
+        &__logo img {
+            @include large($pc) {
+                width: 10.4vw;
+            }
+        }
+    }
+}

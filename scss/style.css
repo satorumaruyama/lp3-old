@@ -1,0 +1,1699 @@
+/*! destyle.css v4.0.1 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/* Reset box-model and set borders */
+/* ============================================ */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+  min-width: 0;
+}
+
+/* Document */
+/* ============================================ */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+html {
+  line-height: 1; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -webkit-tap-highlight-color: transparent; /* 3*/
+}
+
+/* Sections */
+/* ============================================ */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/* Vertical rhythm */
+/* ============================================ */
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
+}
+
+/* Headings */
+/* ============================================ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+  line-height: 1.5em;
+}
+
+/* Lists (enumeration) */
+/* ============================================ */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Lists (definition) */
+/* ============================================ */
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Grouping content */
+/* ============================================ */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+  border-top-width: 1px;
+  margin: 0;
+  clear: both;
+  color: inherit;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
+}
+
+address {
+  font-style: inherit;
+}
+
+/* Text-level semantics */
+/* ============================================ */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Replaced content */
+/* ============================================ */
+/**
+ * Prevent vertical alignment issues.
+ */
+svg,
+img,
+embed,
+object,
+iframe {
+  vertical-align: bottom;
+  max-width: 100%;
+}
+
+/* Forms */
+/* ============================================ */
+/**
+ * Reset form fields to make them styleable.
+ * 1. Make form elements stylable across systems iOS especially.
+ * 2. Inherit text-transform from parent.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none; /* 1 */
+  -moz-appearance: none;
+       appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  text-align: inherit;
+  text-transform: inherit; /* 2 */
+}
+
+/**
+ * Correct cursors for clickable elements.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  cursor: pointer;
+}
+
+button:disabled,
+[type=button]:disabled,
+[type=reset]:disabled,
+[type=submit]:disabled {
+  cursor: default;
+}
+
+/**
+ * Improve outlines for Firefox and unify style with input elements & buttons.
+ */
+:-moz-focusring {
+  outline: auto;
+}
+
+select:disabled {
+  opacity: inherit;
+}
+
+/**
+ * Remove padding
+ */
+option {
+  padding: 0;
+}
+
+/**
+ * Reset to invisible
+ */
+fieldset {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * Correct the outline style in Safari.
+ */
+[type=search] {
+  outline-offset: -2px; /* 1 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Fix font inheritance.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/**
+ * Fix appearance for Firefox
+ */
+/**
+ * Clickable labels
+ */
+label[for] {
+  cursor: pointer;
+}
+
+/* Interactive */
+/* ============================================ */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/*
+ * Remove outline for editable content.
+ */
+[contenteditable]:focus {
+  outline: auto;
+}
+
+/* Tables */
+/* ============================================ */
+/**
+1. Correct table border color inheritance in all Chrome and Safari.
+*/
+table {
+  border-color: inherit; /* 1 */
+  border-collapse: collapse;
+}
+
+caption {
+  text-align: left;
+}
+
+td,
+th {
+  vertical-align: top;
+  padding: 0;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+}
+
+body .header {
+  padding-bottom: 1.5vw;
+}
+@media screen and (min-width: 768px) {
+  body .header {
+    padding-bottom: 0;
+  }
+}
+body .header__container {
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  body .header__container {
+    width: 72.6vw;
+    margin: 0 auto;
+    padding-top: 0.6vw;
+    padding-bottom: 1.4vw;
+    justify-content: space-between;
+  }
+}
+body .header__logo {
+  padding-top: 1.2vw;
+  padding-left: 1.5vw;
+}
+@media screen and (min-width: 768px) {
+  body .header__logo {
+    padding-top: 0.3vw;
+    padding-left: 0.3vw;
+  }
+}
+body .header__logo h2 {
+  display: flex;
+}
+@media screen and (min-width: 768px) {
+  body .header__logo h2 {
+    padding-top: 0.4vw;
+  }
+}
+body .header__logoMainImg {
+  color: #fa7da3;
+}
+@media screen and (min-width: 768px) {
+  body .header__logoMainImg {
+    width: 6.5vw;
+  }
+}
+body .header__logoSubImg {
+  color: #fa7da3;
+}
+@media screen and (min-width: 768px) {
+  body .header__logoSubImg {
+    width: 6.5vw;
+  }
+}
+body .header__nav {
+  display: flex;
+  align-items: center;
+  padding-top: 1.5vw;
+  padding-left: 1.2vw;
+}
+@media screen and (min-width: 768px) {
+  body .header__nav {
+    width: 37.1vw;
+    padding-top: 0.9vw;
+    padding-left: 0.4vw;
+  }
+}
+body .header__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .header__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7.9vw;
+  border-radius: 7.4vw;
+  font-family: "Noto Serif JP";
+  font-size: 0.75rem;
+  color: #fff;
+  white-space: nowrap;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  body .header__item {
+    font-size: 1.3125rem;
+    height: 3.4vw;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1350px) {
+  body .header__item {
+    font-size: 0.7rem;
+  }
+}
+body .header .-pink {
+  background-color: #fa7da3;
+  width: 27.4vw;
+}
+@media screen and (min-width: 768px) {
+  body .header .-pink {
+    width: 13.1vw;
+    padding-left: 0.3vw;
+    margin-left: 0.7vw;
+  }
+}
+body .header .-pink a {
+  width: 75%;
+}
+body .header .-green {
+  background-color: #49c43d;
+  width: 44.5vw;
+  margin-left: 2.5vw;
+}
+@media screen and (min-width: 768px) {
+  body .header .-green {
+    width: 20.5vw;
+    padding-left: 0.3vw;
+    margin-left: 1.3vw;
+  }
+}
+body .header .-green a {
+  width: 86%;
+}
+body .header .fa-chevron-right {
+  padding-left: 1.5vw;
+}
+@media screen and (min-width: 768px) {
+  body .header .fa-chevron-right {
+    padding-left: 0.2vw;
+  }
+}
+body .mainVisual {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../images/mainvisual-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 5.4vw;
+}
+@media screen and (min-width: 768px) {
+  body .mainVisual {
+    background-image: url("../images/mainvisual-image-pc.png");
+    padding-bottom: 2.3vw;
+  }
+}
+body .mainVisual__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.5vw;
+  padding-bottom: 2vw;
+  margin-left: 4.6vw;
+}
+@media screen and (min-width: 768px) {
+  body .mainVisual__container {
+    width: 70.9vw;
+    margin: 0 auto;
+    justify-content: unset;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1350px) {
+  body .mainVisual__container {
+    width: 80vw;
+  }
+}
+body .mainVisual__titleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  body .mainVisual__titleContainer {
+    padding-top: 0;
+    width: 39.7vw;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1350px) {
+  body .mainVisual__titleContainer {
+    width: 50vw;
+  }
+}
+body .mainVisual__title {
+  font-size: 2.625rem;
+  font-family: "Noto Sans JP";
+  color: #ffffff;
+  line-height: 1.2;
+}
+@media screen and (min-width: 768px) {
+  body .mainVisual__title {
+    font-size: 7.6344rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1350px) {
+  body .mainVisual__title {
+    font-size: 3.5rem;
+  }
+}
+body .mainVisual__subTitle {
+  font-size: 1.125rem;
+  font-family: "Noto Sans JP";
+  color: #ffffff;
+  line-height: 1.2;
+}
+@media screen and (min-width: 768px) {
+  body .mainVisual__subTitle {
+    font-size: 2.25rem;
+    padding-left: 21.5vw;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1350px) {
+  body .mainVisual__subTitle {
+    padding-left: 0;
+  }
+}
+body .mainVisual__price {
+  display: flex;
+  box-shadow: 0 3.536px 0px 0px rgba(0, 0, 0, 0.25);
+  background-color: rgba(255, 255, 255, 0.3);
+  opacity: 0.302;
+  padding-bottom: 4.6vw;
+  padding-left: 4.6vw;
+  width: 48.2vw;
+}
+@media screen and (min-width: 768px) {
+  body .mainVisual__price {
+    width: 29.4vw;
+    padding-left: 1.3vw;
+    padding-bottom: 3.4vw;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1350px) {
+  body .mainVisual__price {
+    width: 57.4vw;
+  }
+}
+body .mainVisual__salesText {
+  padding-left: 2vw;
+  padding-top: 3vw;
+}
+@media screen and (min-width: 768px) {
+  body .mainVisual__salesText {
+    padding-left: 2.5vw;
+    padding-top: 0;
+  }
+}
+body .mainVisual__onlyNow {
+  font-size: 0.8125rem;
+  font-family: "Noto Sans JP";
+  color: rgb(250, 125, 163);
+  font-weight: bold;
+  text-align: center;
+  background-color: #ffffff;
+  line-height: 1.5rem;
+  margin-top: 2.8vw;
+}
+@media screen and (min-width: 768px) {
+  body .mainVisual__onlyNow {
+    font-size: 1.8281rem;
+    padding: 0.8vw;
+  }
+}
+body .mainVisual__firstMonth {
+  font-size: 1.5rem;
+  font-family: "Noto Sans JP";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-align: center;
+  background-color: rgb(250, 125, 163);
+  opacity: 1;
+  padding-top: 2.3vw;
+}
+@media screen and (min-width: 768px) {
+  body .mainVisual__firstMonth {
+    font-size: 3.375rem;
+    padding-top: 1.3vw;
+  }
+}
+body .mainVisual__salesPrice {
+  display: flex;
+  align-items: center;
+  padding-left: 3vw;
+  padding-top: 3.3vw;
+}
+@media screen and (min-width: 768px) {
+  body .mainVisual__salesPrice {
+    padding-left: 1.4vw;
+    padding-top: 0;
+  }
+}
+body .mainVisual__salesNumber {
+  font-size: 4.75rem;
+  font-family: "Noto Sans JP";
+  font-weight: bold;
+  color: #fffd7a;
+  font-weight: bold;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  body .mainVisual__salesNumber {
+    font-size: 10.6875rem;
+  }
+}
+body .mainVisual__salesUnit {
+  font-size: 2.25rem;
+  font-family: "Noto Sans JP";
+  color: #fffd7a;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 5.8vw;
+}
+@media screen and (min-width: 768px) {
+  body .mainVisual__salesUnit {
+    font-size: 5.0625rem;
+    padding-top: 3.8vw;
+  }
+}
+body .mainVisual__monthlyPrice {
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Outfit";
+  color: rgb(255, 255, 255);
+  text-align: right;
+  padding-right: 6.4vw;
+}
+@media screen and (min-width: 768px) {
+  body .mainVisual__monthlyPrice {
+    width: 70.9vw;
+    padding-top: 0.6vw;
+    padding-right: 6.1vw;
+    margin: 0 auto;
+  }
+}
+body .mainVisual__monthlyPriceNumber {
+  font-size: 0.875rem;
+}
+@media screen and (min-width: 768px) {
+  body .mainVisual__monthlyPriceNumber {
+    font-size: 1.655rem;
+  }
+}
+body .mainVisual__monthlyPriceUnit {
+  font-size: 0.5625rem;
+  font-family: "Noto Sans JP";
+  padding-top: 1vw;
+}
+@media screen and (min-width: 768px) {
+  body .mainVisual__monthlyPriceUnit {
+    font-size: 1.0637rem;
+  }
+}
+body .mainVisual__list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 6.4vw;
+  padding-left: 52.3vw;
+}
+@media screen and (min-width: 768px) {
+  body .mainVisual__list {
+    padding-top: 3.5vw;
+    padding-left: 14.3vw;
+  }
+}
+body .mainVisual__item {
+  display: flex;
+  justify-content: center;
+  font-family: "Noto Sans JP";
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border: 1px solid #ffffff;
+  margin-bottom: 3.5vw;
+  width: 34.1vw;
+  font-size: 1.125rem;
+  line-height: 1.2;
+  padding: 1.2vw 0;
+}
+@media screen and (min-width: 768px) {
+  body .mainVisual__item {
+    width: 29.2vw;
+    font-size: 1.75rem;
+    margin-left: 23.7vw;
+    padding: 1.2vw 0;
+    margin-bottom: 1.3vw;
+  }
+}
+body .sales {
+  background-color: #fffedd;
+  padding-bottom: 4.3vw;
+}
+@media screen and (min-width: 768px) {
+  body .sales {
+    padding-bottom: 1.3vw;
+  }
+}
+body .sales__title {
+  font-size: 1.3125rem;
+  font-family: "Noto Sans JP";
+  color: rgb(250, 125, 163);
+  line-height: 1.2;
+  text-align: center;
+  padding-top: 5.8vw;
+}
+@media screen and (min-width: 768px) {
+  body .sales__title {
+    font-size: 2.125rem;
+    padding-top: 2.9vw;
+  }
+}
+body .sales__container {
+  margin: 0 auto;
+  padding-top: 3.8vw;
+  width: 89.7vw;
+  border-radius: 2.5vw;
+}
+@media screen and (min-width: 768px) {
+  body .sales__container {
+    width: 38.1vw;
+    padding-top: 1.7vw;
+  }
+}
+body .sales__containerTitle {
+  font-size: 1.3125rem;
+  font-family: "Noto Sans JP";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: center;
+  background-color: #fa7da3;
+  margin: 0 auto;
+  padding-bottom: 1.5vw;
+  border-radius: 0.625rem 0.625rem 0 0;
+}
+@media screen and (min-width: 768px) {
+  body .sales__containerTitle {
+    font-size: 2rem;
+    padding-bottom: 0.5vw;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1350px) {
+  body .sales__containerTitle {
+    font-size: 1rem;
+  }
+}
+body .sales__containerText {
+  font-size: 1.6875rem;
+  font-family: "Noto Sans JP";
+  color: rgb(250, 125, 163);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 0.7vw;
+  padding-left: 2.3vw;
+  padding-bottom: 2vw;
+  background-color: #ffffff;
+  border-radius: 0 0 0.625rem 0.625rem;
+  white-space: nowrap;
+}
+@media screen and (min-width: 768px) {
+  body .sales__containerText {
+    font-size: 2.7294rem;
+    padding-top: 0.4vw;
+    padding-left: 1.1vw;
+    padding-bottom: 0.8vw;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1350px) {
+  body .sales__containerText {
+    font-size: 1rem;
+  }
+}
+body .sales__containerLarge {
+  font-size: 2.625rem;
+}
+@media screen and (min-width: 768px) {
+  body .sales__containerLarge {
+    font-size: 4.2456rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1350px) {
+  body .sales__containerLarge {
+    font-size: 1.5rem;
+  }
+}
+body .sales__contents {
+  font-size: 0.625rem;
+  font-family: "Noto Sans JP";
+  color: rgb(51, 51, 51);
+  line-height: 1.2;
+  text-align: center;
+  padding-top: 2vw;
+}
+@media screen and (min-width: 768px) {
+  body .sales__contents {
+    font-size: 0.875rem;
+    padding-top: 1.6vw;
+  }
+}
+body .application {
+  margin: 0 auto;
+  text-align: center;
+}
+body .application__title {
+  font-size: 1.3125rem;
+  font-family: "Noto Sans JP";
+  color: rgb(250, 125, 163);
+  font-weight: bold;
+  line-height: 1.339;
+  padding-top: 4.1vw;
+  padding-bottom: 2.3vw;
+  padding-left: 1.5vw;
+  letter-spacing: 0.5vw;
+}
+@media screen and (min-width: 768px) {
+  body .application__title {
+    font-size: 2.125rem;
+    letter-spacing: 0.2vw;
+    padding-top: 4.5vw;
+    padding-left: 0.9vw;
+    padding-bottom: 1.1vw;
+  }
+}
+body .application__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20.5vw;
+  font-family: "Noto Serif JP";
+  font-weight: bold;
+  font-size: 1.3125rem;
+  color: #fff;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  body .application__item {
+    font-size: 2.125rem;
+    height: 9vw;
+    border-radius: 4.0625rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1350px) {
+  body .application__item {
+    font-size: 1rem;
+  }
+}
+body .application__item a {
+  width: 69.4vw;
+  padding-left: 3.8vw;
+  font-family: "Noto Sans JP";
+}
+@media screen and (min-width: 768px) {
+  body .application__item a {
+    width: 31.1vw;
+    font-family: "Noto Sans JP";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.339;
+  }
+}
+body .application .-green {
+  background-color: #49c43d;
+  width: 89.7vw;
+  margin: 0 auto;
+  letter-spacing: 0.5vw;
+  line-height: 7.4vw;
+  border-radius: 7.0625rem;
+}
+@media screen and (min-width: 768px) {
+  body .application .-green {
+    width: 39.5vw;
+  }
+}
+body .application__bend {
+  display: inline-block;
+}
+body .trial {
+  width: 89.7vw;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 9.4vw;
+}
+@media screen and (min-width: 768px) {
+  body .trial {
+    width: 39.5vw;
+    padding-bottom: 4vw;
+  }
+}
+body .trial__title {
+  font-size: 1.0625rem;
+  font-family: "Noto Sans JP";
+  color: rgb(80, 191, 255);
+  font-weight: bold;
+  line-height: 1.647;
+  border-top: 1px solid rgb(80, 191, 255);
+  border-bottom: 1px solid rgb(80, 191, 255);
+  margin-top: 7.9vw;
+  letter-spacing: 0.2vw;
+  padding-top: 1vw;
+  padding-bottom: 1.7vw;
+}
+@media screen and (min-width: 768px) {
+  body .trial__title {
+    font-size: 1.75rem;
+    margin-top: 3.4vw;
+    padding-bottom: 0.8vw;
+    padding-top: 0.2vw;
+  }
+}
+body .trial__container {
+  text-align: start;
+}
+@media screen and (min-width: 768px) {
+  body .trial__container {
+    padding-top: 0.4vw;
+  }
+}
+body .trial__container p {
+  font-size: 0.875rem;
+  padding-top: 3vw;
+}
+@media screen and (min-width: 768px) {
+  body .trial__container p {
+    font-size: 1.4287rem;
+    padding-top: 1.3vw;
+  }
+}
+body .trial__container span {
+  font-size: 0.6875rem;
+}
+@media screen and (min-width: 768px) {
+  body .trial__container span {
+    font-size: 1.1225rem;
+  }
+}
+body .point {
+  background-color: #fdf0f5;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  body .point {
+    padding-bottom: 0.2vw;
+  }
+}
+body .point__title {
+  font-size: 1.125rem;
+  font-family: "Noto Sans JP";
+  color: rgb(77, 43, 27);
+  padding-top: 8.4vw;
+}
+@media screen and (min-width: 768px) {
+  body .point__title {
+    padding-top: 2.4vw;
+  }
+}
+body .point__title img {
+  width: 51.2vw;
+  padding: 0.2vw 0;
+}
+@media screen and (min-width: 768px) {
+  body .point__title img {
+    width: 18.4vw;
+    padding-top: 0.9vw;
+  }
+}
+body .point__subtitle {
+  font-size: 2rem;
+  font-family: "Noto Sans JP";
+  color: rgb(250, 125, 163);
+  font-weight: bold;
+}
+@media screen and (min-width: 768px) {
+  body .point__subtitle {
+    font-size: 2.625rem;
+    padding-top: 0.8vw;
+  }
+}
+body .point__list {
+  padding-top: 3.8vw;
+  width: 89.7vw;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  body .point__list {
+    padding-top: 4.2vw;
+    width: 54.1vw;
+  }
+}
+body .point__item {
+  margin-bottom: 7.6vw;
+}
+@media screen and (min-width: 768px) {
+  body .point__item {
+    margin-bottom: 3vw;
+  }
+}
+body .point__itemTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fa7da3;
+  margin: 0 auto;
+  padding: 3.3vw 0;
+  border-radius: 0.625rem 0.625rem 0 0;
+}
+@media screen and (min-width: 768px) {
+  body .point__itemTitle {
+    padding: 0.8vw 0;
+  }
+}
+body .point__itemTitleText {
+  font-size: 1.125rem;
+  font-family: "Noto Sans JP";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  border: 1px solid #fa7da3;
+}
+@media screen and (min-width: 768px) {
+  body .point__itemTitleText {
+    font-size: 1.75rem;
+    padding: 0.4vw 0;
+  }
+}
+body .point__itemPipe {
+  padding: 0 3vw;
+}
+@media screen and (min-width: 768px) {
+  body .point__itemPipe {
+    padding: 0 1vw;
+  }
+}
+body .point__itemContents {
+  margin: 0 auto;
+  padding-top: 3.3vw;
+  background-color: #ffffff;
+  border: 1px solid #fa7da3;
+  border-radius: 0 0 0.625rem 0.625rem;
+  padding-bottom: 6.3vw;
+}
+@media screen and (min-width: 768px) {
+  body .point__itemContents {
+    padding-bottom: 2.8vw;
+    padding-top: 1vw;
+    padding-left: 0.2vw;
+  }
+}
+body .point__item:nth-child(2) .point__itemContents {
+  padding-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  body .point__item:nth-child(2) .point__itemContents {
+    padding-bottom: 0.8vw;
+  }
+}
+body .point__itemContentsInner {
+  width: 79.4vw;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  body .point__itemContentsInner {
+    width: 48.6vw;
+  }
+}
+body .point__contentsText {
+  font-size: 0.875rem;
+  font-family: "Noto Sans JP";
+  color: rgb(51, 51, 51);
+  line-height: 1.5;
+  text-align: left;
+}
+@media screen and (min-width: 768px) {
+  body .point__contentsText {
+    font-size: 1.3125rem;
+    padding-top: 0.7vw;
+  }
+}
+body .point__contentsTitle {
+  font-size: 1.4375rem;
+  font-family: "Noto Sans JP";
+  color: rgb(77, 44, 28);
+  font-weight: bold;
+  font-variant: small-caps;
+  padding-top: 4.8vw;
+}
+@media screen and (min-width: 768px) {
+  body .point__contentsTitle {
+    padding-top: 2vw;
+  }
+}
+body .point__contentsFlex {
+  display: flex;
+  justify-content: center;
+  padding-top: 3vw;
+  -moz-column-gap: 5.3vw;
+       column-gap: 5.3vw;
+}
+@media screen and (min-width: 768px) {
+  body .point__contentsFlex {
+    -moz-column-gap: 2.9vw;
+         column-gap: 2.9vw;
+    padding-top: 1.7vw;
+  }
+}
+body .point__contentsBox {
+  width: 36.6vw;
+  height: 21.7vw;
+  border: 1px solid #000;
+}
+@media screen and (min-width: 768px) {
+  body .point__contentsBox {
+    width: 16vw;
+    height: 9.5vw;
+  }
+}
+body .point__contentsBox p {
+  padding-top: 8.7vw;
+  font-size: 1.125rem;
+}
+@media screen and (min-width: 768px) {
+  body .point__contentsBox p {
+    padding-top: 3.6vw;
+    font-size: 1.75rem;
+  }
+}
+body .point__contentsBox img {
+  padding-top: 5.8vw;
+}
+@media screen and (min-width: 768px) {
+  body .point__contentsBox img {
+    padding-top: 2.1vw;
+    width: 7.9vw;
+  }
+}
+body .point__comparisonText {
+  font-size: 0.875rem;
+  font-family: "Noto Sans JP";
+  color: rgb(51, 51, 51);
+  padding-top: 1.7vw;
+}
+@media screen and (min-width: 768px) {
+  body .point__comparisonText {
+    font-size: 1.3125rem;
+    padding-top: 0.9vw;
+  }
+}
+body .point__body {
+  background-image: url("../images/point-wholepart.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: 5.8vw;
+  font-size: 0.75rem;
+  line-height: 4.2vw;
+  position: relative;
+  padding-bottom: 19.2vw;
+}
+@media screen and (min-width: 768px) {
+  body .point__body {
+    background-image: url("../images/point-wholepart-pc.png");
+    background-repeat: no-repeat;
+    font-size: 1rem;
+    padding-bottom: 0;
+    width: 75%;
+    margin: 1.5vw auto 2.3vw;
+    aspect-ratio: 533/601;
+  }
+}
+body .point__face {
+  line-height: 4.3vw;
+}
+@media screen and (min-width: 768px) {
+  body .point__face {
+    position: absolute;
+    top: 1.3vw;
+    left: 12.1vw;
+    line-height: 1.5vw;
+  }
+}
+body .point__upper {
+  padding-top: 5.8vw;
+  line-height: 4.3vw;
+}
+@media screen and (min-width: 768px) {
+  body .point__upper {
+    position: absolute;
+    top: 9.5vw;
+    left: 13.8vw;
+    line-height: 1.5vw;
+    padding-top: 1.5vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  body .point__upper p:last-child {
+    display: none;
+  }
+}
+body .point__arm {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  body .point__arm {
+    position: absolute;
+    top: 19vw;
+    left: 15.7vw;
+  }
+}
+body .point__under {
+  padding-top: 14.6vw;
+}
+@media screen and (min-width: 768px) {
+  body .point__under {
+    position: absolute;
+    top: 20.4vw;
+    left: 13.2vw;
+    line-height: 1.5vw;
+    padding-top: 4.2vw;
+  }
+}
+body .point__leg {
+  padding-top: 5.3vw;
+}
+@media screen and (min-width: 768px) {
+  body .point__leg {
+    position: absolute;
+    top: 26.5vw;
+    left: 14vw;
+    padding-top: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  body .point__leg p:last-child {
+    display: none;
+  }
+}
+body .point__legPc {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  body .point__legPc {
+    display: block;
+    position: absolute;
+    top: 37.5vw;
+    left: 12vw;
+  }
+}
+body .point__head {
+  position: absolute;
+  top: 10.2vw;
+  right: 1.5vw;
+}
+@media screen and (min-width: 768px) {
+  body .point__head {
+    position: absolute;
+    top: 3.8vw;
+    left: 28.4vw;
+  }
+}
+body .point__back {
+  position: absolute;
+  top: 22.3vw;
+  right: 0.7vw;
+}
+@media screen and (min-width: 768px) {
+  body .point__back {
+    position: absolute;
+    top: 9vw;
+    left: 32.9vw;
+  }
+}
+body .point__hip {
+  position: absolute;
+  top: 53.5vw;
+  right: -0.7vw;
+}
+@media screen and (min-width: 768px) {
+  body .point__hip {
+    position: absolute;
+    top: 16.7vw;
+    right: -2vw;
+    line-height: 1.5vw;
+  }
+}
+body .point__partial {
+  width: 83vw;
+  padding-top: 6.1vw;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  -moz-column-gap: 5.3vw;
+       column-gap: 5.3vw;
+  row-gap: 1.5vw;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  body .point__partial {
+    display: flex;
+    width: 94%;
+    -moz-column-gap: 1.3vw;
+         column-gap: 1.3vw;
+    padding-top: 2.1vw;
+  }
+}
+body .point__partialItem {
+  width: 25.6vw;
+}
+body .point__partialText {
+  padding-top: 3.5vw;
+  color: #fa7da3;
+}
+@media screen and (min-width: 768px) {
+  body .point__partialText {
+    padding-top: 0.7vw;
+  }
+}
+body .course {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  body .course {
+    margin-top: 2.7vw;
+    padding-bottom: 5.4vw;
+  }
+}
+body .course__title {
+  font-size: 1.125rem;
+  font-family: "Noto Sans JP";
+  color: rgb(77, 43, 27);
+  padding-top: 10.6vw;
+}
+@media screen and (min-width: 768px) {
+  body .course__title {
+    font-size: 1.5rem;
+    padding-top: 1.1vw;
+  }
+}
+body .course__title img {
+  width: 51.2vw;
+  padding: 0.2vw 0;
+}
+@media screen and (min-width: 768px) {
+  body .course__title img {
+    width: 18.4vw;
+    padding-top: 0.9vw;
+  }
+}
+body .course__subtitle {
+  font-size: 2rem;
+  font-family: "Noto Sans JP";
+  color: rgb(250, 125, 163);
+  font-weight: bold;
+}
+@media screen and (min-width: 768px) {
+  body .course__subtitle {
+    font-size: 2.625rem;
+    padding-top: 0.6vw;
+  }
+}
+body .course__list {
+  padding-top: 3.8vw;
+  width: 89.7vw;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  body .course__list {
+    display: flex;
+    justify-content: center;
+    -moz-column-gap: 2vw;
+         column-gap: 2vw;
+    padding-top: 2.5vw;
+  }
+}
+body .course__item {
+  border-radius: 0.625rem;
+  padding-bottom: 5.6vw;
+  border: 1px solid #fa7da3;
+  margin-bottom: 6.6vw;
+}
+@media screen and (min-width: 768px) {
+  body .course__item {
+    width: 24.3vw;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1350px) {
+  body .course__item {
+    width: 37vw;
+  }
+}
+body .course__itemContents {
+  margin: 0 auto;
+  padding-top: 3.3vw;
+  background-color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  body .course__itemContents {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+}
+body .course__itemTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fdf0f5;
+  margin: 0 auto;
+  padding: 3.5vw 0;
+}
+@media screen and (min-width: 768px) {
+  body .course__itemTitle {
+    padding: 0.5vw 0;
+  }
+}
+body .course__itemTitleText {
+  font-size: 1.125rem;
+  font-family: "Noto Sans JP";
+  color: #fa7da3;
+  line-height: 1.2;
+}
+@media screen and (min-width: 768px) {
+  body .course__itemTitleText {
+    font-size: 1.75rem;
+    padding: 0.4vw 0;
+    letter-spacing: 0.1vw;
+  }
+}
+body .course__itemContentsInner {
+  width: 79.4vw;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  body .course__itemContentsInner {
+    width: 22vw;
+  }
+}
+body .course__itemContentsInner img {
+  padding-top: 2vw;
+}
+@media screen and (min-width: 768px) {
+  body .course__itemContentsInner img {
+    padding-top: 1vw;
+  }
+}
+body .course__contentsText {
+  font-size: 0.875rem;
+  font-family: "Noto Sans JP";
+  color: rgb(51, 51, 51);
+  line-height: 1.5;
+  text-align: left;
+}
+@media screen and (min-width: 768px) {
+  body .course__contentsText {
+    font-size: 1.125rem;
+    padding-top: 0.7vw;
+    width: 22.4vw;
+  }
+}
+body .voice {
+  text-align: center;
+  padding-bottom: 13.1vw;
+  background-color: #fdf0f5;
+}
+@media screen and (min-width: 768px) {
+  body .voice {
+    padding-bottom: 0;
+  }
+}
+body .voice__subtitle {
+  font-size: 2rem;
+  font-family: "Noto Sans JP";
+  color: rgb(250, 125, 163);
+  font-weight: bold;
+  padding-top: 3vw;
+}
+@media screen and (min-width: 768px) {
+  body .voice__subtitle {
+    font-size: 2.625rem;
+    padding-top: 2.8vw;
+  }
+}
+body .voice .slider {
+  margin: 0 auto;
+  padding: 5.5vw 0;
+}
+@media screen and (min-width: 768px) {
+  body .voice .slider {
+    -moz-column-gap: 1vw;
+         column-gap: 1vw;
+    padding-top: 1vw;
+    width: 66vw;
+  }
+}
+body .voice .slider-item {
+  margin: 0 2.5vw;
+}
+@media screen and (min-width: 768px) {
+  body .voice .slider-item {
+    padding-top: 1.5vw;
+    margin: 0;
+  }
+}
+body .voice .slick-slide {
+  width: 79.4vw;
+}
+@media screen and (min-width: 768px) {
+  body .voice .slick-slide {
+    width: 21.5vw;
+    margin-right: 1vw;
+  }
+}
+body .voice__itemContents {
+  background-color: #ffffff;
+  border-radius: 0 0 0.625rem 0.625rem;
+}
+@media screen and (min-width: 768px) {
+  body .voice__itemContents {
+    width: 21.5vw;
+    margin: 0 auto;
+    padding-bottom: 0.2vw;
+  }
+}
+body .voice__itemTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fa7da3;
+  margin: 0 auto;
+  padding: 3.5vw 0;
+  border-radius: 0.625rem 0.625rem 0 0;
+}
+@media screen and (min-width: 768px) {
+  body .voice__itemTitle {
+    padding: 0.3vw 0;
+    width: 21.5vw;
+  }
+}
+body .voice__itemTitleText {
+  font-size: 1.125rem;
+  font-family: "Noto Sans JP";
+  color: #ffffff;
+  border: 1px solid #fa7da3;
+  line-height: 1.2;
+}
+@media screen and (min-width: 768px) {
+  body .voice__itemTitleText {
+    font-size: 1.125rem;
+    padding: 0.4vw 0;
+    letter-spacing: 0.1vw;
+    width: 21.5vw;
+  }
+}
+body .voice__itemContentsInner {
+  display: flex;
+}
+body .voice__itemImg {
+  width: 20vw;
+  margin: 0 5.1vw;
+  padding-top: 5.1vw;
+}
+@media screen and (min-width: 768px) {
+  body .voice__itemImg {
+    width: 20vw;
+    margin: 0;
+    padding-top: 1.2vw;
+    padding-left: 0.9vw;
+  }
+}
+body .voice__itemBox {
+  width: 43.5vw;
+  text-align: left;
+  padding-top: 4.6vw;
+}
+@media screen and (min-width: 768px) {
+  body .voice__itemBox {
+    padding-top: 1.7vw;
+    padding-left: 0.9vw;
+  }
+}
+body .voice__boxProfile {
+  font-size: 1rem;
+  font-family: "Noto Sans JP";
+  color: rgb(250, 125, 163);
+}
+body .voice__boxText {
+  font-size: 0.875rem;
+  font-family: "Noto Sans JP";
+  color: rgb(51, 51, 51);
+  padding-top: 3vw;
+  width: 43.5vw;
+}
+@media screen and (min-width: 768px) {
+  body .voice__boxText {
+    padding-top: 0.8vw;
+    width: 12.2vw;
+    line-height: 1.5;
+  }
+}
+body .voice .slick-dots {
+  bottom: -5.5vw;
+}
+body .footer {
+  text-align: center;
+  background-color: #fa7da3;
+  color: #ffffff;
+  margin-top: 12.3vw;
+}
+@media screen and (min-width: 768px) {
+  body .footer {
+    margin-top: 4.5vw;
+  }
+}
+body .footer__logo {
+  padding: 3vw 0;
+}
+@media screen and (min-width: 768px) {
+  body .footer__logo {
+    margin: 0 auto;
+    padding: 1.8vw 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  body .footer__logo img {
+    width: 10.4vw;
+  }
+}/*# sourceMappingURL=style.css.map */
