@@ -68,7 +68,8 @@ body {
             align-items: center;
             height: 7.9vw;
             border-radius: 7.4vw;
-            font-family: "Noto Serif JP";
+            font-family: "Noto Sans JP";
+            color: rgb(255, 255, 255);
             font-size: 0.75rem;
             color: #fff;
             white-space: nowrap;
@@ -180,12 +181,10 @@ body {
                 padding-left: 0;
             }   
         }
-
         &__price {
             display: flex;
-            box-shadow: 0 3.536px 0px 0px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 0.221rem 0px 0px rgba(0, 0, 0, 0.25);
             background-color: rgba(255,255,255,0.3);
-            opacity: 0.302;
             padding-bottom: 4.6vw;
             padding-left: 4.6vw;
             width: 48.2vw;
@@ -193,6 +192,7 @@ body {
                 width: 29.4vw;
                 padding-left: 1.3vw;
                 padding-bottom: 3.4vw;
+                box-shadow: 0.221rem 0.221rem 0px 0px rgba(0, 0, 0, 0.25);
             }
             @include middle($min, $max) {
                 width: 57.4vw;
@@ -207,18 +207,18 @@ body {
             }
         }
         &__onlyNow  {
-                font-size: 0.8125rem;
-                font-family: "Noto Sans JP";
-                color: rgb(250, 125, 163);
-                font-weight: bold;
-                text-align: center;
-                background-color: #ffffff;
-                line-height: 1.5rem;
-                margin-top: 2.8vw;
-                @include large($pc) {
-                    font-size: 1.8281rem;
-                    padding: 0.8vw;
-                }
+            font-size: 0.8125rem;
+            font-family: "Noto Sans JP";
+            color: rgb(250, 125, 163);
+            font-weight: bold;
+            text-align: center;
+            background-color: #ffffff;
+            line-height: 1.5rem;
+            margin-top: 2.8vw;
+            @include large($pc) {
+                font-size: 1.8281rem;
+                padding: 0.8vw;
+            }
         }
         &__firstMonth {
             font-size: 1.5rem;
@@ -376,28 +376,28 @@ body {
             }
         }
         &__containerText  {
-                font-size: 1.6875rem;
-                font-family: "Noto Sans JP";
-                color: rgb(250, 125, 163);
-                font-weight: bold;
-                line-height: 1.2;
-                text-align: center;
-                margin: 0 auto;
-                padding-top: 0.7vw;
-                padding-left: 2.3vw;
-                padding-bottom: 2vw;
-                background-color: #ffffff;
-                border-radius: 0 0 0.625rem 0.625rem;
-                white-space: nowrap;
-                @include large($pc) {
-                    font-size: 2.7294rem;
-                    padding-top: 0.4vw;
-                    padding-left: 1.1vw;
-                    padding-bottom: 0.8vw;
-                }
-                @include middle($min, $max) {
-                    font-size: 1rem;
-                }
+            font-size: 1.6875rem;
+            font-family: "Noto Sans JP";
+            color: rgb(250, 125, 163);
+            font-weight: bold;
+            line-height: 1.2;
+            text-align: center;
+            margin: 0 auto;
+            padding-top: 0.7vw;
+            padding-left: 2.3vw;
+            padding-bottom: 2vw;
+            background-color: #ffffff;
+            border-radius: 0 0 0.625rem 0.625rem;
+            white-space: nowrap;
+            @include large($pc) {
+                font-size: 2.7294rem;
+                padding-top: 0.4vw;
+                padding-left: 1.1vw;
+                padding-bottom: 0.8vw;
+            }
+            @include middle($min, $max) {
+                font-size: 1rem;
+            }
         }  
         &__containerLarge {
             font-size: 2.625rem;
@@ -603,7 +603,6 @@ body {
             @include large($pc) {
                 padding: 0.8vw 0;
             }
-
         }
         &__itemTitleText {
             font-size: 1.125rem;
@@ -696,7 +695,6 @@ body {
                 padding-top: 3.6vw;
                 font-size: 1.75rem;
             }
-
         }
         &__contentsBox img {
             padding-top: 5.8vw;
@@ -1018,9 +1016,10 @@ body {
                 margin-right: 1vw;
             }
         }
+        .slick-slide.slick-initialized {
+            visibility: visible;
+        }
         &__itemContents {
-            // height: auto;
-            // width: 100%;
             background-color: #ffffff;
             border-radius: 0 0 0.625rem 0.625rem;
             @include large($pc) {
@@ -1041,7 +1040,6 @@ body {
                 padding: 0.3vw 0;
                 width: 21.5vw;
             }
-
         }
         &__itemTitleText {
             font-size: 1.125rem;
@@ -1099,6 +1097,11 @@ body {
         .slick-dots {
             bottom: -5.5vw;
         }
+        .slick-dots li button:before{
+            font-size:1.1rem!important;
+            color: #fa7da3;
+        }
+
     }
 
     .footer {
