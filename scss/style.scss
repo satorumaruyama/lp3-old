@@ -5,7 +5,7 @@
 
 body {
     .header {
-        padding-bottom: 1.5vw;
+        padding-bottom: 2.5vw;
         @include large($pc) {
             padding-bottom: 0;
         }
@@ -69,7 +69,6 @@ body {
             height: 7.9vw;
             border-radius: 7.4vw;
             font-family: "Noto Sans JP";
-            color: rgb(255, 255, 255);
             font-size: 0.75rem;
             color: #fff;
             white-space: nowrap;
@@ -93,6 +92,9 @@ body {
         } 
         & .-pink a {
             width: 75%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         } 
         & .-green {
             background-color: #49c43d;
@@ -105,13 +107,15 @@ body {
             }
         }  
         & .-green a {
-            width: 86%;
-
+            width: 86%;            
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .fa-chevron-right {
             padding-left: 1.5vw;
             @include large($pc) {
-                padding-left: 0.2vw;
+                padding-left: 1vw;
             }
         }
     }
@@ -131,7 +135,6 @@ body {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding-top:0.5vw;
             padding-bottom: 2vw;
             margin-left: 4.6vw;
             @include large($pc) {
@@ -183,13 +186,13 @@ body {
         }
         &__price {
             display: flex;
+            justify-content: center;
             box-shadow: 0 0.221rem 0px 0px rgba(0, 0, 0, 0.25);
             background-color: rgba(255,255,255,0.3);
             padding-bottom: 4.6vw;
-            padding-left: 4.6vw;
             width: 48.2vw;
             @include large($pc) {
-                width: 29.4vw;
+                width: 28.4vw;
                 padding-left: 1.3vw;
                 padding-bottom: 3.4vw;
                 box-shadow: 0.221rem 0.221rem 0px 0px rgba(0, 0, 0, 0.25);
@@ -202,8 +205,8 @@ body {
             padding-left: 2vw;
             padding-top: 3vw;
             @include large($pc) {
-                padding-left: 2.5vw;
-                padding-top: 0;
+                padding-left: 0;
+                padding-top: 0.4375rem;
             }
         }
         &__onlyNow  {
@@ -226,12 +229,11 @@ body {
             color: rgb(255, 255, 255);
             font-weight: bold;
             text-align: center;
-            background-color: rgb(250, 125, 163);
             opacity: 1;  
             padding-top: 2.3vw; 
             @include large($pc) {
                 font-size: 3.375rem;
-                padding-top: 1.3vw;
+                padding-top: 1.3125rem;
             }  
         }
         &__salesPrice {
@@ -449,7 +451,7 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 20.5vw;
+            padding: 0.625rem 0;
             font-family: "Noto Serif JP";
             font-weight: bold;
             font-size: 1.3125rem;
@@ -474,6 +476,9 @@ body {
                 color: rgb(255, 255, 255);
                 font-weight: bold;
                 line-height: 1.339;
+            }
+            @include middle($min, $max) {
+                font-size: 1rem;
             }
 
         } 
@@ -523,6 +528,7 @@ body {
         }
         &__container {
             text-align: start;
+            font-family: "Noto Sans JP";
             @include large($pc) {
                 padding-top: 0.4vw;
             }
@@ -535,11 +541,17 @@ body {
                 padding-top: 1.3vw;
                 
             }
+            @include middle($min, $max) {
+                font-size: 0.6875rem;
+            }
         }
         &__container span {
             font-size: 0.6875rem;
             @include large($pc) {
                 font-size: 1.1225rem;
+            }
+            @include middle($min, $max) {
+                font-size: 0.5625rem;
             }
         }
     }
@@ -717,6 +729,7 @@ body {
             background-image: url("../images/point-wholepart.png");
             background-size: 100%;
             background-repeat: no-repeat;
+            font-family: "Noto Sans JP";
             margin-top: 5.8vw;
             font-size: 0.75rem;
             line-height: 4.2vw;
@@ -730,6 +743,9 @@ body {
                 width: 75%;
                 margin: 1.5vw auto 2.3vw;
                 aspect-ratio: 533 / 601;
+            }
+            @include middle($min, $max) {
+                font-size: 0.5625rem;
             }
         }
         &__face {
@@ -835,11 +851,13 @@ body {
             display: grid;
             grid-template-rows: 1fr 1fr;
             grid-template-columns: 1fr 1fr 1fr;
+            font-family: "Noto Sans JP";
             column-gap: 5.3vw;
             row-gap: 1.5vw;
             margin: 0 auto;
             @include large($pc) {
                 display: flex;
+                justify-content: center;
                 width: 94%;
                 column-gap: 1.3vw;
                 padding-top: 2.1vw;
@@ -959,6 +977,7 @@ body {
             padding-top: 2vw;
             @include large($pc) {
                 padding-top: 1vw;
+                padding-bottom: 0.9375rem;
             }
         }
         &__contentsText {
@@ -996,6 +1015,7 @@ body {
         .slider {
             margin: 0 auto;
             padding: 5.5vw 0;
+            overflow-x: hidden; 
             @include large($pc) {
                 column-gap: 1vw;
                 padding-top:1vw;
@@ -1014,6 +1034,11 @@ body {
             @include large($pc) {
                 width: 21.5vw;
                 margin-right: 1vw;
+            }
+        }
+        .slick-list {
+            @include large($pc) {
+                margin: 0 10px;
             }
         }
         .slick-slide.slick-initialized {
@@ -1052,6 +1077,9 @@ body {
                 padding: 0.4vw 0;
                 letter-spacing: 0.1vw;
                 width: 21.5vw;
+            }
+            @include middle($min, $max) {
+                font-size: 1.0625rem;
             }
         }
         &__itemContentsInner {
